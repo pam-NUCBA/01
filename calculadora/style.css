@@ -1,0 +1,101 @@
+/* https://fonts.google.com/specimen/Lato?preview.text=123945687&preview.text_type=custom */
+
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+/*reset */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: url("./assets/bg.jpg");
+  background-size: cover;
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  height: 100vh;
+}
+
+/* la calcu */
+
+.calculator {
+  width: 220px;
+  height: 60vh;
+  background-color: rgb(238, 238, 238);
+  margin: 40px auto auto auto;
+  border-radius: 10px;
+  box-shadow: 1px 1px 7px 5px rgba(124, 117, 109, 0.219);
+}
+
+.keys {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.key,
+.num {
+  width: 20%;
+  height: 40px;
+  margin: 2%;
+  border-radius: 10px;
+  font-size: 1em;
+  border: none;
+  box-shadow: 1px 1px 5px 1px rgba(47, 45, 42, 0.219);
+}
+
+.num {
+  background-color: rgb(238, 146, 204);
+}
+
+.num:hover {
+  background-color: rgb(255, 210, 238);
+  cursor: pointer;
+}
+
+.key {
+  background-color: rgb(181, 165, 214);
+}
+
+.key:hover {
+  background-color: rgb(210, 190, 251);
+  cursor: pointer;
+}
+
+/* podemos hacer un override del color para algunas teclas especiales, se acuerdan? */
+
+.key:nth-child(20),
+.key:nth-child(1),
+.key:nth-child(2) {
+  background-color: rgb(184, 240, 250);
+}
+
+.key:nth-child(20):hover,
+.key:nth-child(1):hover,
+.key:nth-child(2):hover {
+  background-color: rgb(227, 250, 253);
+  cursor: pointer;
+}
+
+/*las cajas de resultados*/
+
+.historyBox {
+  margin-top: 20px;
+  padding: 3%;
+  font-size: 0.8em;
+  height: 5vh;
+  text-align: end;
+  color: rgb(144, 144, 144);
+}
+
+.resultBox {
+  background-color: white;
+  border: 1.5px solid rgb(192, 192, 192);
+  margin: 3% 3% 12% 3%;
+  padding: 3%;
+  border-radius: 5px;
+  text-align: end;
+}
